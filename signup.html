@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      .main-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+      }
+
+      form{
+        padding: 5%;
+        border: 1px solid black;
+        border-radius: 15px;
+      }
+
+      .circular{
+        border-radius: 20px;
+        border: 1px solid #333;
+      }
+    </style>
+</head>
+<body>
+    <div class="main-body">
+      <form>
+        <h2><b>Register to Resonance</b></h2>
+        <div class="form-group">
+          <input class="form-control" id="fullname" placeholder="Name" required><br>
+          <input class="form-control" id="username" placeholder="Username" required><br>
+          <input class="form-control" id="email" placeholder="Email"><br>
+          <input class="form-control" id="password" placeholder="Password"><br>
+          <input class="form-control" id="cpassword" placeholder="Confirm Password"><br>
+          <input type="button" class="form-control btn btn-primary circular" value="Register"><br>
+        </div>
+      </form>
+    </div>
+</body>
+</html>

@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Resonance | Home</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: rgba(114, 114, 114, 0.61);
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        ul li{
+            list-style: none;
+            display: inline;
+        }
 
-    li {
-      float: left;
-    }
+        ul{
+            display: flex;
+            justify-content: center;
+            background-color: #007bff;
+            
+        }
 
-    li a {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 3vh 3vw;
-      text-decoration: none;
-    }
+        .center-button{
+            width: 40vw;
+            margin: 5px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
 
-    /* Change the link color to #111 (black) on hover */
-    li a:hover {
-      background-color: aqua;
-    }
+        .center-button:hover{
+            background-color: rgba(255, 255, 255, 0.76);
+        }
 
-    .rightSide{
-      float: right;
-    }
-  </style>
+        .active{
+            background-color: rgb(255, 255, 255);
+        }
+
+        .main-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-  <div class="parallax">
-    <div class="parallax-bg"></div>
-    <nav class="top-navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="location.html">Location</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="tour.html">Take a Tour</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li class="rightSide"><a href="">Login</a></li>
-      </ul>
-    </nav>
-    <div class="parallax-content">
-      <!--
-        <h1>WELCOME TO RESONANCE OCEAN VIEW & POOL RESORT</h1>
-      <p>Beach and Resort</p>
-      -->
-      
+    <div class="main-container">
+        <div class="header-sign">
+            <ul>
+                <li>
+                    <span class="btn btn-basic center-button active" data-link="signin.html" onclick="selectButton(this)">Login</span>
+                </li>
+                <li>
+                    <span class="btn btn-basic center-button" data-link="signup.html" onclick="selectButton(this)">Sign Up</span>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <iframe id="main-frame" src="signin.html" frameborder="0" scrolling="no"></iframe>
+        </div>
     </div>
-  </div>
+    <script>
+        var mainFrame = document.getElementById("main-frame");
+        var allbutton = document.querySelectorAll(".center-button");
 
-  <div class="main-content">
-    <h2>Main Content Here</h2>
-    <p>This is the main content section.</p>
-  </div>
-
-  <script src="script.js"></script>
+        function selectButton(_button){
+            var link = _button.getAttribute("data-link");
+            allbutton.forEach(function(button) {
+                button.classList.remove('active');
+                // Replace 'classToRemove' with the class you want to remove from the buttons
+                });
+            _button.classList.add("active");
+            mainFrame.src = link;
+            
+        }
+    </script>
 </body>
 </html>
-
