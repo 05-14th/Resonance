@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .parallax {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .parallax-bg {
+    background-image: url('/Images/Background.jpg'); /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2);
+  }
+  
+  .parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000000;
+  }
+  
+  .main-content {
+    height: 1000px; /* Adjust height as needed */
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+
+  
+  
