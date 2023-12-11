@@ -8,6 +8,29 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'main', 'about.html'));
+});
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'main', 'contact.html'));
+});
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'main', 'location.html'));
+});
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'main', 'tour.html'));
+});
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'main', 'services.html'));
+});
+
+
+
+
 app.get('/verification', (req, res) => {
   res.sendFile(path.join(__dirname, 'main', 'verification.html'));
 });
