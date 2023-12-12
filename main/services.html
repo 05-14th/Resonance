@@ -34,10 +34,35 @@
         .rightSide{
         float: right;
         }
+
+        .bubble-frame{
+          display: flex;
+        }
+
+        .inner-frame{
+          padding: 20px;
+          text-align: center;
+        }
+
+        .inner-frame-2{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .inner-frame img{
+          height: 80%;
+          width: 80%;
+        }
+
+        .inner-frame-2 img{
+          width: 25%;
+          margin: 15px;
+        }
     </style>
 </head>
 <body>
-    <div class="parallax">
+  <div class="parallax">
         <div class="parallax-bg"></div>
         <nav class="top-navigation">
           <ul>
@@ -51,19 +76,88 @@
           </ul>
         </nav>
         <div class="parallax-content">
-          <!--
-            <h1>WELCOME TO RESONANCE OCEAN VIEW & POOL RESORT</h1>
-          <p>Beach and Resort</p>
-          -->
-          
+          <h1>SERVICES</h1>
         </div>
       </div>
-    
       <div class="main-content">
-        <h2>Main Content Here</h2>
-        <p>This is the main content section.</p>
+        <div>
+          <h2>Entrance Fee</h2>
+          <div class="bubble-frame">
+            <div class="inner-frame">
+              <img src="/Images/pool-day.jpg" alt="Day time">
+              <h4>Day Rate[7AM to 5PM]</h4>
+              <p>&#8369; 100.00</p>
+            </div>
+            <div class="inner-frame">
+              <img src="/Images/pool-night.jpg" alt="Night time">
+              <h4>Night Rate[6PM to 7AM]</h4>
+              <p>&#8369; 100.00</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Rooms</h2>
+          <div class="bubble-frame">
+            <div class="inner-frame-2">
+              <img src="/Images/room_one.jpg" alt="A Picture of a Room">
+              <p style="text-align: justify;">
+                "Discover the epitome of coastal indulgence as you step into our exquisitely designed room, featuring panoramic vistas of the azure ocean that gently lull you to sleep; relax amidst the lavish comforts of our accommodations, including sumptuous bedding and a private patio where the salty breeze whispers tales of the sea; seize the day with direct access to the sun-drenched beach, where a world of seaside adventures awaits—be it lounging under the sun, taking refreshing dips in the waves, or strolling along the sandy shores; and with an array of local attractions just a stone's throw away, from delectable seafood restaurants to thrilling water sports, immerse yourself in an experience tailor-made for romantic getaways, family escapades, or solo retreats—secure your reservation now and unlock the gateway to a treasured beachfront haven, where lasting memories are born."
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Package rates</h2>
+          <div class="bubble-frame">
+            <div class="inner-frame" style="display: flex;">
+              <img src="/Images/Cottage.jpg" alt="Cottage" style="margin: 15px">
+              <p style="text-align: justify; display: flex; justify-content: center; align-items: center;">
+                "Immerse yourself in the ultimate coastal escape within our charming beach cottages, where panoramic vistas greet you every morning and evening from your private outdoor haven, complete with a table and chairs for tranquil moments; relish the convenience of direct access to the sandy shores just steps away, perfect for sun-soaked adventures or serene seaside contemplation; unwind in the comfort of your thoughtfully appointed cottage, equipped with everything you need for a cozy stay, while cherishing the added delight of your own outdoor space designed for al fresco dining, morning coffees, or sunset toasts—an ideal setting for romantic getaways, family bonding, or solo retreats; seize this opportunity to secure your slice of coastal paradise and create treasured memories against the backdrop of the mesmerizing ocean waves."
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Package rates</h2>
+          <div class="bubble-frame">
+            <div class="inner-frame">
+              <img src="/Images/package-day.jpg" alt="Day Package">
+              <p>&#8369; 12000.00</p>
+            </div>
+            <div class="inner-frame">
+              <img src="/Images/package-night.jpg" alt="Night Package">
+              <p>&#8369; 14000.00</p>
+            </div>
+          </div>
+          <h5>Inclusions for Exclusive Package (max 40PAX) : </h5>
+          <p style="text-align: justify;">
+            1 big Villa w/ Comfort Room, 1 big function hall w/ rooms, 7 umbrella tables, 1 Cabana (Airconditioned), 1 Cabana (Non-Aircon), 3 Comfort room, Videoke, FREE wifi, 1 Swimming Pool, Swing (double setter), 2 Shower Room, Kitchen w/ gas stove, refrigerator, and kitchen utensils, Charcoal Stove, BBQ House, Bonfire Place, Selfie Site, Stage for Event- Hanging Veranda (overlooking view to ocean), & Parking Space
+          </p>
+        </div>
+        <div>
+          <h2>Other Packages</h2>
+          <div class="bubble-frame">
+            <div class="inner-frame">
+              <img src="/Images/karaoke.jpg" alt="Karaoke">
+              <h3>Karaoke</h3>
+            </div>
+            <div class="inner-frame">
+              <img src="/Images/hanging-swings.jpg" alt="Swings">
+              <h3>Hanging Veranda<br>and Swings</h3>
+            </div>
+            <div class="inner-frame">
+              <img src="/Images/bonfire.jpg" alt="Bonfire">
+              <h3>Bonfire Place</h3>
+            </div>
+            <div class="inner-frame">
+              <img src="/Images/selfie.jpg" alt="Selfie">
+              <h3>Selfie Sites</h3>
+            </div>
+          </div>
+        </div>
       </div>
-    
+      
+      
       <script src="script.js"></script>
 </body>
 </html>

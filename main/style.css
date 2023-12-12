@@ -34,10 +34,27 @@ body, html {
   }
   
   .main-content {
-    height: 1000px; /* Adjust height as needed */
+    height: auto; /* Adjust height as needed */
     padding: 20px;
-    background-color: #f2f2f2;
+    display: solid;
+    padding: 25px;
+    background-color: aquamarine;
   }
 
-  
+  img{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  video{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  h1{
+    font-size: 500%;
+    text-shadow:
+                    -1px -1px 0 #ffffff,  
+                    1px -1px 0 #ffffff,
+                    -1px 1px 0 #ffffff,
+                    1px 1px 0 #ffffff;
+  }
   

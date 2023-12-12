@@ -33,6 +33,14 @@
         .rightSide{
         float: right;
         }
+
+        .sub-container{
+          display: flex;
+        }
+
+        .sub-container video{
+          margin: 15px;
+        }
     </style>
 </head>
 <body>
@@ -50,17 +58,19 @@
           </ul>
         </nav>
         <div class="parallax-content">
-          <!--
-            <h1>WELCOME TO RESONANCE OCEAN VIEW & POOL RESORT</h1>
-          <p>Beach and Resort</p>
-          -->
-          
+          <h1>Take a Tour</h1>
         </div>
       </div>
     
       <div class="main-content">
-        <h2>Main Content Here</h2>
-        <p>This is the main content section.</p>
+       <div class="sub-container">
+        <video width="640" height="360" muted autoplay loop>
+          <source src="/Images/tour.mp4" type="video/mp4">
+          <!-- Add other video sources (WebM, Ogg) if needed -->
+          Your browser does not support the video tag.
+        </video>
+        <p style="display: flex; justify-content: center; align-items: center; font-style: italic; font-weight: bold;">"Nestled along the pristine coastline, our beach homestay offers a cozy and intimate retreat for travelers seeking a serene escape. Wake up to the gentle sound of waves lapping against the shore from your doorstep"</p>
+       </div>
       </div>
     
       <script src="script.js"></script>
